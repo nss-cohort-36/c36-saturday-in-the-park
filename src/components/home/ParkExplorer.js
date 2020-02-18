@@ -16,7 +16,8 @@ class ParkExplorer extends Component {
       // set state with new data for park areas
       fetch("http://localhost:8000/parkareas", {
         "headers": {
-          "Accept": "application/json"
+          "Accept": "application/json",
+          "Authorization": `Token ${sessionStorage.getItem("kennywood_token")}`
         }
       })
       .then(response => response.json())
