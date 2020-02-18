@@ -3,7 +3,7 @@ import React, {Component } from "react"
 import { withRouter } from "react-router-dom"
 import ParkExplorer from "./home/ParkExplorer"
 import Register from "./auth/Register"
-
+import Login from "./auth/Login"
 
 class ApplicationViews extends Component {
 
@@ -19,6 +19,11 @@ class ApplicationViews extends Component {
         <Route
           path="/register" render={props => {
             return <Register {...props} />
+          }}
+        />
+        <Route
+          path="/login" render={props => {
+            return <Login {...props} />
           }}
         />
       </React.Fragment>
