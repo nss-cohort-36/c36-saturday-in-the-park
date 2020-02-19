@@ -3,7 +3,7 @@ const isAuthenticated = () => {
 }
 
 const register = (userInfo) => {
-  return fetch("http://localhost:8000/register/", {
+  return fetch("http://localhost:8000/register", {
     method: "POST",
     headers: {
         "Content-Type": "application/json",
@@ -20,7 +20,7 @@ const register = (userInfo) => {
 }
 
 const login = (credentials) => {
-  return fetch("http://localhost:8000/login/", {
+  return fetch("http://localhost:8000/login", {
       method: "POST",
       headers: {
           "Content-Type": "application/json",

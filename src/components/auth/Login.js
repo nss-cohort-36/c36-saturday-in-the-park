@@ -37,7 +37,7 @@ class Login extends Component {
           <form className="form--login" onSubmit={this.handleLogin}>
             <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
             <fieldset>
-              <label htmlFor="inputUsername"> Username </label>
+              <label htmlFor="username"> Username </label>
               <input onChange={this.handleInputChange}
                 type="username"
                 id="username"
@@ -46,7 +46,7 @@ class Login extends Component {
                 required autoFocus />
             </fieldset>
             <fieldset>
-              <label htmlFor="inputPassword"> Password </label>
+              <label htmlFor="password"> Password </label>
               <input onChange={this.handleInputChange}
                 type="password"
                 id="password"
