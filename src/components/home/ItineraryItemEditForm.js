@@ -37,13 +37,14 @@ class ItineraryItemEditForm extends Component {
 
   updateItineraryItem = () => {
     fetch(`http://localhost:8000/itineraryitems/${this.props.match.params.itemId}`, {
-      "method": "PATCH",
+      "method": "PUT",
       "headers": {
           "Accept": "application/json",
           "Content-Type": "application/json",
           "Authorization": `Token ${sessionStorage.getItem("kennywood_token")}`
       },
       "body": JSON.stringify({
+        "ride_id": this.props.match.params.itemId,
         "starttime": this.state.starttime
       })
     })
