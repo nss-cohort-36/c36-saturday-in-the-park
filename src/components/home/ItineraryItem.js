@@ -10,6 +10,7 @@ class ItineraryItem extends Component {
           <p>
             <span>
               {this.props.item.attraction.name} at {this.props.item.starttime}
+              <Link className="nav-link" to={`/myitinerary/${this.props.item.id}/edit`}>Edit</Link>
             </span>
           </p>
         </section>
