@@ -6,9 +6,10 @@ class Area extends Component {
     return (
       <>
         <section className="parkArea">
-          <p>
+        <button className="fakeLink parkArea__link"
+            onClick={() => this.props.getAttractions(this.props.area.id)}>
             {this.props.area.name}
-          </p>
+          </button>
         </section>
       </>
     )
